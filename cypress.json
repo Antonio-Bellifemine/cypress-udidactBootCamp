@@ -1,0 +1,16 @@
+{
+  "projectId": "nhthb9",
+  "baseUrl": "https://angular.ganatan.com",
+  "viewportWidth": 1920,
+  "viewportHeight": 1080,
+  "reporter": "",
+  "chromeWebSecurity": false,
+  "reporterOptions": {
+    "reportDir": "cypress/reports/mocha",
+    "quiet": true,
+    "overwrite": false,
+    "html": false,
+    "json": true
+  }
+  
+}
