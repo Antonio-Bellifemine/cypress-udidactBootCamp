@@ -1,8 +1,9 @@
 /// <reference types="cypress" />
-import { before } from "cypress/types/lodash";
+
 {
   "./node_module/cypress",
-  "cypress/**/*/.js"
+  "cypress/**/*/.js",
+  "cypress/types/lodash"
 }
 /**
  * @type {Cypress.PluginConfig}
