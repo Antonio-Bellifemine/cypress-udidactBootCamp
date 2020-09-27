@@ -1,10 +1,4 @@
 /// <reference types="cypress" />
-
-{
-  "./node_module/cypress",
-  "cypress/**/*/.js",
-  "cypress/types/lodash"
-}
 /**
  * @type {Cypress.PluginConfig}
  */
