@@ -7,8 +7,7 @@ describe('Angular reactive forms', () => {
 
     it('should open the "reactive form" list', () => {
         cy.get('ul[id="reactive-form-collapse"]').invoke('show');
-
-        // let's confirm the 'reactive form' list ois open by checking its nested values
+        // let's confirm the 'reactive form' list is open by checking its nested values
         cy.get('li[class="my-1 active"]:eq(0) > ul').within(() => {
             cy.get('li').contains('prototype');
             cy.get('li').contains('form-control');
@@ -23,6 +22,7 @@ describe('Angular reactive forms', () => {
 
     it('should open the "Features form" list', () => {
         cy.get('ul[id="Features-collapse"]').invoke('show');
+        // let's confirm the 'reactive form' list is open by checking its nested values
         cy.get('li[class="my-1 active"]:eq(1) > ul').within(() => {
             cy.get('li').contains('charts');
             cy.get('li').contains('leaflet');
@@ -36,6 +36,7 @@ describe('Angular reactive forms', () => {
 
     it('should open the "crud form" list', () => {
         cy.get('ul[id="crud-collapse"]').invoke('show');
+        // let's confirm the 'reactive form' list is open by checking its nested values
         cy.get('li[class="my-1 active"]:eq(2) > ul').within(() => {
             cy.get('li').contains('continents');
             cy.get('li').contains('countries');
@@ -49,6 +50,7 @@ describe('Angular reactive forms', () => {
 
     it('should open the "typescript form" list', () => {
         cy.get('ul[id="typescript-collapse"]').invoke('show');
+        // let's confirm the 'reactive form' list is open by checking its nested values
         cy.get('li[class="my-1 active"]:eq(3) > ul').within(() => {
             cy.get('li').contains('modules');
             cy.get('li').contains('interfaces');
@@ -61,6 +63,7 @@ describe('Angular reactive forms', () => {
 
     it('should open the "bootstrap-prototype form" list', () => {
         cy.get('ul[id="bootstrap-prototype-collapse"]').invoke('show');
+        // let's confirm the 'reactive form' list is open by checking its nested values
         cy.get('li[class="my-1 active"]:eq(4) > ul').within(() => {
             cy.get('li').contains('alerts');
             cy.get('li').contains('badge');
