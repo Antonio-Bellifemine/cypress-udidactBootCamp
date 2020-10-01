@@ -1,0 +1,11 @@
+/*
+    we'll use this for global intellisense(intelligent code) after we explain 3 slash directive.
+    if we do not set up global intellisense we have to use 3 slash directive for every single spec file. 
+*/
+
+{
+    "include": [
+        "./node_modules/cypress",
+        "cypress/**/*.js"
+    ]
+}

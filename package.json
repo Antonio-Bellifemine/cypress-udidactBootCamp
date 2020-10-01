@@ -4,7 +4,7 @@
   "description": "official test run",
   "main": "index.js",
   "scripts": {
-    "test": "cypress test",
+    "test": "npx cypress run",
     "start": "npx cypress open"
   },
   "author": "Antonio B.",

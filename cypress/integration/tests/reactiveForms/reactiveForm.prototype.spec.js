@@ -1,3 +1,7 @@
+// make this a const to make the code more business legible. also for the coders coming in 
+// to code behind you. The variables should make sense. 
+
+// the more you can make your code read easy, the better pattern(s) and habits you will form
 const nameAndReleaseDate = 'div[class="form-row"]';
 
 before('', () => {

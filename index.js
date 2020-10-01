@@ -1,6 +1,3 @@
-/// <reference types="cypress" />
-import { before } from "cypress/types/lodash";
-
 /**
  * @type {Cypress.PluginConfig}
  */
