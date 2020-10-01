@@ -11,6 +11,14 @@
     "overwrite": false,
     "html": false,
     "json": true
+  },
+  "screenshots": {
+    "screenshotsFolder": "cypress/screenshots",
+    "screenshot": false
+  },
+  "videos": {
+    "trashAssetsBeforeRuns": true,
+    "videosFolder": "",
+    "video": false
   }
-  
 }
