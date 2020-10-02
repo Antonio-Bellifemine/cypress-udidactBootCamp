@@ -2,8 +2,7 @@
 
 /*
 
-You need a triple slash reference in
-
+You need a triple slash reference
 When you are referencing JavaScript type definitions e.g. definitions for node, jQuery, etc.
 
 /// <reference types="Cypress" />
@@ -17,30 +16,23 @@ When you are referencing JavaScript type definitions e.g. definitions for node, 
     
     test it.only by copy and pasting this and running this test. it should run only one it block 
     and finish executing. 
-
-    it('should display the webapp home page', () => {
-        cy.viewport(1920, 1080);
-        cy.visit('https://angular.ganatan.com/');
-        cy.get('span').contains('ganatan')
-        cy.get('div[id="navbarsExampleDefault"]')
-    });
     
 */
 
 describe('test  web app', () => {
 
-    it.only('should display the webapp home page', () => {
-        cy.viewport(1920, 1080);
-        cy.visit('https://angular.ganatan.com/');
-        cy.get('span').contains('ganatan')
-        cy.get('div[id="navbarsExampleDefault"]')
-    });
-
     it('should display the webapp home page', () => {
         cy.viewport(1920, 1080);
         cy.visit('https://angular.ganatan.com/');
         cy.get('span').contains('ganatan')
         cy.get('div[id="navbarsExampleDefault"]')
     });
+
+    // it.only('should display the webapp home page', () => {
+    //     cy.viewport(1920, 1080);
+    //     cy.visit('https://angular.ganatan.com/');
+    //     cy.get('span').contains('ganatan')
+    //     cy.get('div[id="navbarsExampleDefault"]')
+    // });
 
 });
