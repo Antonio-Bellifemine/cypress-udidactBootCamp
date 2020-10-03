@@ -7,6 +7,9 @@
     "test": "npx cypress run",
     "start": "npx cypress open"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/iDEALCG/cypress-udidactBootCamp.git",
   "author": "Antonio B.",
   "license": "ISC",
   "dependencies": {},
