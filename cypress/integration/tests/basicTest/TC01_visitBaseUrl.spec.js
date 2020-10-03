@@ -23,9 +23,9 @@ describe('test  web app', () => {
 
     it('should display the webapp home page', () => {
         cy.viewport(1920, 1080);
-        cy.visit('https://angular.ganatan.com/');
-        cy.get('span').contains('ganatan')
-        cy.get('div[id="navbarsExampleDefault"]')
+        cy.visit('');
+        cy.get('a:contains("Sign in")').click()
+        cy.get('input:eq(0)').type('UDIDACT')
     });
 
     // it.only('should display the webapp home page', () => {
