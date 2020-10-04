@@ -4,8 +4,10 @@
   "description": "official test run",
   "main": "index.js",
   "scripts": {
-    "test": "npx cypress run",
-    "start": "npx cypress open"
+    "test": "cypress run --headed --browser chrome",
+    "start": "cypress open",
+    "cy:run": "cypress run --record --key 9f8acd6f-aca3-44f1-b344-f13e82b47b29",
+    "cy:test": "cypress run --headless --browser chrome"
   },
   "repository": {
     "type": "git",
