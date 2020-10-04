@@ -4,7 +4,7 @@ before('visit registration page', () => {
     cy.visit('register');
 })
 
-describe('display the registration page', () => {
+describe('Registration Page Displays Properly', () => {
 
     it('verify conduit logo appears', () => {
         cy.get('a').contains('conduit').should('be.visible');
@@ -13,7 +13,7 @@ describe('display the registration page', () => {
 
     it('verify sign in h1 and "have an account" link appear', () => {
         cy.get('a').contains('conduit').should('be.visible');
-        cy.get('h1').contains('Have an account?').should('be.visible')
+        cy.get('a').contains('Have an account?').should('be.visible')
     });
 
     it('display the username, email, password input fields', () => {
