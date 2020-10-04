@@ -19,7 +19,7 @@ When you are referencing JavaScript type definitions e.g. definitions for node, 
     
 */
 
-describe('test  web app', () => {
+describe('test conduit webapp', () => {
 
     it('display the log in page', () => {
         cy.viewport(1920, 1080);
@@ -34,5 +34,4 @@ describe('test  web app', () => {
     //     cy.get('span').contains('ganatan')
     //     cy.get('div[id="navbarsExampleDefault"]')
     // });
-
 });
