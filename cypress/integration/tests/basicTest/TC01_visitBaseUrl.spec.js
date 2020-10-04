@@ -21,7 +21,7 @@ When you are referencing JavaScript type definitions e.g. definitions for node, 
 
 describe('test  web app', () => {
 
-    it('should display the webapp home page', () => {
+    it('display the log in page', () => {
         cy.viewport(1920, 1080);
         cy.visit('');
         cy.get('a:contains("Sign in")').click()
