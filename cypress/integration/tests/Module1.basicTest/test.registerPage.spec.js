@@ -1,7 +1,7 @@
 /// <reference types="Cypress" />
 const userLastName = chance.last({ nationality: 'it' });
-const userEmail = chance.Email({ nationality: 'it' });
-const userLastName = chance.last({ nationality: 'it' });
+const userEmail = chance.email({ domain: 'example.com' })
+const passWord = chance.sentence({ words: 5 });
 
 
 
@@ -25,8 +25,8 @@ describe('Registration Page Displays Properly', () => {
         cy.get('a:contains("Sign in")').click();
         cy.get('a:contains("Need an account?")').click();
         cy.get('input:eq(0)').should('be.visible').type(`A${userLastName}`);
-        cy.get('input:eq(1)').should('be.visible');
-        cy.get('input:eq(2)').should('be.visible');
+        cy.get('input:eq(1)').should('be.visible').type(userEmail);
+        cy.get('input:eq(2)').should('be.visible').type(passWord);
     });
 
 });
