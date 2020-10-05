@@ -1,4 +1,9 @@
 /// <reference types="Cypress" />
+const userLastName = chance.last({ nationality: 'it' });
+const userEmail = chance.Email({ nationality: 'it' });
+const userLastName = chance.last({ nationality: 'it' });
+
+
 
 before('visit registration page', () => {
     cy.visit('register');
@@ -19,15 +24,15 @@ describe('Registration Page Displays Properly', () => {
     it('display the username, email, password input fields', () => {
         cy.get('a:contains("Sign in")').click();
         cy.get('a:contains("Need an account?")').click();
-        cy.get('input:eq(0)').should('be.visible');
+        cy.get('input:eq(0)').should('be.visible').type(`A${userLastName}`);
         cy.get('input:eq(1)').should('be.visible');
         cy.get('input:eq(2)').should('be.visible');
         // diffferent syntax
-        cy.get('a:contains("Sign in")').click();
-        cy.get('a:contains("Need an account?")').click();
-        cy.get('input[placeholder="Username"]').should('be.visible');
-        cy.get('input[placeholder="Email"]').should('be.visible');
-        cy.get('input[type="password"]').should('be.visible');
+        // cy.get('a:contains("Sign in")').click();
+        // cy.get('a:contains("Need an account?")').click();
+        // cy.get('input[placeholder="Username"]').should('be.visible').type(`A${userLastName}`);
+        // cy.get('input[placeholder="Email"]').should('be.visible');
+        // cy.get('input[type="password"]').should('be.visible');
     });
 
 });
