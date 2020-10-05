@@ -1,13 +1,17 @@
+/*
+    we can run any of these right in the browser console and achieve the same result
+*/
+
 describe('examples of random values using vanillaJS without a library like chanceJS', () => {
 
     it('generates a random hash pswd ', () => {
         // this is an example of the code you could have to write to generate a random hash passwordwithout a random value library like ChanceJS
         function generatePassword(passwordLength) {
-            var numberChars = "0123456789";
-            var upperChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-            var lowerChars = "abcdefghijklmnopqrstuvwxyz";
-            var allChars = numberChars + upperChars + lowerChars;
-            var randPasswordArray = Array(passwordLength);
+            let numberChars = "0123456789";
+            let upperChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+            let lowerChars = "abcdefghijklmnopqrstuvwxyz";
+            let allChars = numberChars + upperChars + lowerChars;
+            let randPasswordArray = Array(passwordLength);
             randPasswordArray[0] = numberChars;
             randPasswordArray[1] = upperChars;
             randPasswordArray[2] = lowerChars;
@@ -18,9 +22,9 @@ describe('examples of random values using vanillaJS without a library like chanc
         }
 
         function shuffleArray(array) {
-            for (var i = array.length - 1; i > 0; i--) {
-                var j = Math.floor(Math.random() * (i + 1));
-                var temp = array[i];
+            for (let i = array.length - 1; i > 0; i--) {
+                let j = Math.floor(Math.random() * (i + 1));
+                let temp = array[i];
                 array[i] = array[j];
                 array[j] = temp;
             }
@@ -32,8 +36,9 @@ describe('examples of random values using vanillaJS without a library like chanc
 
 
     it('generate a random word consisting of alphanumeric characters, use', () => {
-        var randomstring = Math.random().toString(36).slice(-8);
-
+        let randomstring = Math.random().toString(36).slice(-8);
+        console.log('randomstring:', randomstring);
+        alert(randomstring);
         /*
         HOW IT WORKS
 
