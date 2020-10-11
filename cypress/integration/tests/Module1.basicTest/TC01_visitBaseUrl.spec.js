@@ -30,8 +30,7 @@ describe('test conduit webapp', () => {
 
     // it.only('should display the webapp home page', () => {
     //     cy.viewport(1920, 1080);
-    //     cy.visit('https://angular.ganatan.com/');
-    //     cy.get('span').contains('ganatan')
+    //     cy.get('span').contains('Hello')
     //     cy.get('div[id="navbarsExampleDefault"]')
     // });
 });

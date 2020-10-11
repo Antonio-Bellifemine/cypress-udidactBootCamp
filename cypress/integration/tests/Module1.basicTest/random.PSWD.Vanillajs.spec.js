@@ -5,7 +5,7 @@
 describe('examples of random values using vanillaJS without a library like chanceJS', () => {
 
     it('generates a random hash pswd ', () => {
-        // this is an example of the code you could have to write to generate a random hash passwordwithout a random value library like ChanceJS
+        // this is an example of the what code could look like to generate a random hash passwordwithout a random value library like ChanceJS
         function generatePassword(passwordLength) {
             let numberChars = "0123456789";
             let upperChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -30,14 +30,14 @@ describe('examples of random values using vanillaJS without a library like chanc
             }
             return array;
         }
-        console.log('Random vanilla js pswd:', generatePassword(12));
+        // console.log('Random vanilla js pswd:', generatePassword(12));
         alert(generatePassword(12));
     })
 
 
     it('generate a random word consisting of alphanumeric characters, use', () => {
         let randomstring = Math.random().toString(36).slice(-8);
-        console.log('randomstring:', randomstring);
+        // console.log('randomstring:', randomstring);
         alert(randomstring);
         /*
         HOW IT WORKS
