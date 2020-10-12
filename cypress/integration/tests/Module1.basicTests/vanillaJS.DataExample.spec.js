@@ -30,15 +30,16 @@ describe('examples of random values using vanillaJS without a library like chanc
             }
             return array;
         }
+        let examplePassword = generatePassword(12);
         // console.log('Random vanilla js pswd:', generatePassword(12));
-        alert(generatePassword(12));
+        alert(`Example Random Hash Generated With VanillaJS: ( ${examplePassword} )`);
     })
 
 
     it('generate a random word consisting of alphanumeric characters, use', () => {
         let randomstring = Math.random().toString(36).slice(-8);
         // console.log('randomstring:', randomstring);
-        alert(randomstring);
+        alert(`Example Random alpha-numeric Generated With VanillaJS: ( ${randomstring} )`);
         /*
         HOW IT WORKS
 
