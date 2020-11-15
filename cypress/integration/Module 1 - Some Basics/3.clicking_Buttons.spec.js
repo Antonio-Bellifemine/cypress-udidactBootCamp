@@ -10,7 +10,6 @@
 */
 
 describe('test conduit webapp', () => {
-
     it('display the log in page', () => {
         cy.viewport(1920, 1080);
         cy.visit('');
@@ -18,5 +17,4 @@ describe('test conduit webapp', () => {
         cy.get('input:eq(0)').type('UDIDACT')
         cy.get('input:eq(1)').type('Password')
     });
-});3
-6
+});
