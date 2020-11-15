@@ -1,7 +1,7 @@
 Feature: Module 1 Basic Test Cases
 Description: the purpose of this feature is to learn some cypress basics.
 
-    Background: User is not logged in and is on the public landing page
+    Background: User is visits 'baseUrl'
         GIVEN: a user navigates to the conduit public landing page
         WHEN: The application Page loads
         THEN: the nav bar should display Conduit logo
@@ -25,25 +25,3 @@ Description: the purpose of this feature is to learn some cypress basics.
         THEN: the application should redirect to the sign in page
 
 ---------------------------------------------------------------------
-
-    scenerio: Click on 'Sign In'
-        WHEN: The user clicks 'Sign In'
-        THEN: the application should redirect to the sign in page
-        
----------------------------------------------------------------------
-
-    scenerio: Click on 
-        WHEN: 
-        THEN: the application should redirect to the sign in page
-        
----------------------------------------------------------------------
-
-    scenerio: Click on 
-        WHEN: 
-        THEN: the application should redirect to the sign in page
-
----------------------------------------------------------------------
-
-    scenerio: Click on 
-        WHEN: 
-        THEN: the application should redirect to the sign in page

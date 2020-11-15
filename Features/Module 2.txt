@@ -1,0 +1,44 @@
+Feature: Module 2 - Public Landing Page
+Description: .
+
+    Background: User is not logged in and is on the public landing page
+        GIVEN: a user navigates to the conduit public landing page
+        WHEN: The application Page loads
+        THEN: the nav bar should display Conduit logo
+
+---------------------------------------------------------------------
+
+    scenerio: Click on 'Your Feed' button
+        WHEN: The user clicks on your feed
+        THEN: the application should redirect to the sign in page
+
+---------------------------------------------------------------------
+
+    scenerio: Click on a 'like' button
+        WHEN: The user clicks on a like button
+        THEN: the application should redirect to the sign in page
+
+---------------------------------------------------------------------
+
+    scenerio: Click on a users username
+        WHEN: The user clicks on a user profile link
+        THEN: the application should redirect to the sign in page
+
+---------------------------------------------------------------------
+
+    scenerio: Click on 'Sign In'
+        WHEN: The user clicks 'Sign In'
+        THEN: the application should redirect to the sign in page
+        And: Sign in and 'Need and account' button should be visible
+        
+---------------------------------------------------------------------
+
+    scenerio: Click on 
+        WHEN: The user clicks 'Sign Up'
+        THEN: the application should redirect to the sign Up page
+        
+---------------------------------------------------------------------
+
+    scenerio: Click on a random post 
+        WHEN: User clicks on a post
+        THEN: the application should redirect to the post that was clicked
