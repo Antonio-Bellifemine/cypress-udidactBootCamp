@@ -1,7 +1,5 @@
 
 // start using cypress without intellisense. after writing describe and it block, then explain intellisense and 3 slash directive
-
-
 /*
 
             You need a triple slash reference
@@ -18,11 +16,7 @@ describe('test conduit webapp', () => {
         cy.visit('');
         cy.get('a:contains("Sign in")').click()
         cy.get('input:eq(0)').type('UDIDACT')
+        cy.get('input:eq(1)').type('Password')
     });
-
-    // it.only('should display the webapp home page', () => {
-    //     cy.viewport(1920, 1080);
-    //     cy.get('span').contains('Hello')
-    //     cy.get('div[id="navbarsExampleDefault"]')
-    // });
-});
+});3
+6
