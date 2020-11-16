@@ -8,9 +8,9 @@ Description: the purpose of this feature is to learn some cypress basics.
 
 ---------------------------------------------------------------------
 
-    scenerio: Click on 'Your Feed' button
-        WHEN: The user clicks on your feed
-        THEN: the application should redirect to the sign in page
+    scenerio: verify 'conduit logo' appears
+        WHEN: The user is on the public landing page
+        THEN: the 'conduit logo' should be visible
 
 ---------------------------------------------------------------------
 
