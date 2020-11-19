@@ -20,8 +20,8 @@ Description: .
 
 ---------------------------------------------------------------------
 
-    scenerio: Click on a users username
-        WHEN: The user clicks on a user profile link
+    scenerio: Click on a users 'username'
+        WHEN: The user clicks on a 'user profile link'
         THEN: the application should redirect to the sign in page
 
 ---------------------------------------------------------------------
