@@ -9,10 +9,12 @@
     
 */
 
-describe('How to click a link', () => {
+describe('How to click a button', () => {
+
     it('click a link', () => {
         cy.viewport(1920, 1080);
-        cy.visit('');
-        cy.get('a:contains("Sign in")').click()
+        cy.visit('register');
+        cy.get('button').contains("Sign up").click()
     });
+    
 });
