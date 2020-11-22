@@ -21,3 +21,14 @@ describe("We'll cover some basic assertions", () => {
     });
 
 });
+
+describe("Dealing with failing tests due to multiple elements being returned", () => {
+
+    it('How do I click the right one!?', () => {
+        cy.get('a.nav-link').click()
+        // cy.get('a.nav-link').contains('Sign in').click()
+        // cy.get('a.nav-link').eq(0).click()
+        // cy.get('a.nav-link:eq(0)').click()
+    });
+
+});
