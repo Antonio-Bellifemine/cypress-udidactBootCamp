@@ -1,8 +1,8 @@
-before('visit registration page', () => {
-    cy.visit('');
-})
+before(() => {
+    cy.visit('')
+});
 
-describe("We'll cover some basic assertions", () => {
+describe("We'll make sure the BaseUrl displays the landing page", () => {
 
     it('verify nav bar on public landing page contains logo and expected buttons', () => {
         cy.get('a').contains('conduit').should('be.visible');
@@ -18,19 +18,6 @@ describe("We'll cover some basic assertions", () => {
 
     it('Confirm sign in button is visible in nav bar', () => {
         cy.get('a.nav-link').eq(1).should('contain', 'Sign in')
-    });
-
-});
-
-
-// use this section to explain how to click the correct elements when multiple are returned
-describe("Dealing with failing tests due to multiple elements being returned", () => {
-
-    it('How do I click the right one!?', () => {
-        cy.get('a.nav-link').click()
-        // cy.get('a.nav-link').contains('Sign in').click()
-        // cy.get('a.nav-link').eq(0).click()
-        // cy.get('a.nav-link:eq(0)').click()
     });
 
 });
