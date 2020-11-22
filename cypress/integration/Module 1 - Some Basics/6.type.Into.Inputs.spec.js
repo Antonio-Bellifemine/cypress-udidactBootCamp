@@ -3,7 +3,7 @@ const userLastName = chance.last({ nationality: 'it' });
 const userEmail = chance.email({ domain: 'example.com' })
 const passWord = chance.sentence({ words: 5 });
 
-
+// now we can add the before block so we can separate the set up code from the test cases 
 
 before('visit registration page', () => {
     

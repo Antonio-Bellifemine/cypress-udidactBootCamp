@@ -9,12 +9,10 @@
     
 */
 
-describe('test conduit webapp', () => {
+describe('Click Sign In link', () => {
     it('display the log in page', () => {
         cy.viewport(1920, 1080);
         cy.visit('');
         cy.get('a:contains("Sign in")').click()
-        cy.get('input:eq(0)').type('UDIDACT')
-        cy.get('input:eq(1)').type('Password')
     });
 });

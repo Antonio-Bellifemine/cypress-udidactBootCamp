@@ -9,12 +9,12 @@
     
 */
 
-describe('How to click a button', () => {
+describe('How to click the right button when there is more than one', () => {
 
     it('click a link', () => {
         cy.viewport(1920, 1080);
-        cy.visit('register');
-        cy.get('button').contains("Sign up").click()
+        cy.visit('');
+        cy.get('button').click()
     });
-    
+
 });
