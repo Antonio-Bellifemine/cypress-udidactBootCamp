@@ -4,7 +4,7 @@ Description: .
     Background: User is not logged in and is on the public landing page
         GIVEN: a user navigates to the conduit public landing page
         WHEN: The application Page loads
-        THEN: the nav bar should display Conduit logo
+        THEN: the nav bar should display Conduit logo 
 
 ---------------------------------------------------------------------
 
