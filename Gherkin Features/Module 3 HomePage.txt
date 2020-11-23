@@ -1,44 +1,45 @@
-Feature: Module 2 - Public Landing Page
-Description: .
+Feature: Module 2 - Home Page
+Description: This Feature will test the 'Home Page' for a user that is logged in
 
-    Background: User is not logged in and is on the public landing page
-        GIVEN: a user navigates to the conduit public landing page
+    Background: User is not logged in
+        GIVEN: a user logs in
         WHEN: The application Page loads
-        THEN: the nav bar should display Conduit logo
+        AND: the user has no current articles
+        THEN: 'your feed' should display "No articles are here... yet."
 
 ---------------------------------------------------------------------
 
-    scenerio: Click on 'Your Feed' button
-        WHEN: The user clicks on your feed
-        THEN: the application should redirect to the sign in page
+        WHEN: The application Page loads
+        AND: the user has articles
+        THEN: 'your feed' should display your articles
 
 ---------------------------------------------------------------------
 
     scenerio: Click on a 'like' button
+        WHEN: The user clicks on a like button 
+        THEN: the like counter for that post should increase by 1
+
+---------------------------------------------------------------------
+
+  scenerio: Click on a 'like' button to dislike
         WHEN: The user clicks on a like button
-        THEN: the application should redirect to the sign in page
+        AND: Clicks the same like button again
+        THEN: the like counter for that post should decrease by 1
 
 ---------------------------------------------------------------------
 
     scenerio: Click on a users 'username'
         WHEN: The user clicks on a 'user profile link'
-        THEN: the application should redirect to the sign in page
+        THEN: the application should redirect to the 'user profile'
 
 ---------------------------------------------------------------------
 
-    scenerio: Click on 'Sign In'
-        WHEN: The user clicks 'Sign In'
-        THEN: the application should redirect to the sign in page
-        And: Sign in and 'Need and account' button should be visible
+    scenerio: 
+        WHEN: 
+        THEN: 
         
 ---------------------------------------------------------------------
 
-    scenerio: Click on 
-        WHEN: The user clicks 'Sign Up'
-        THEN: the application should redirect to the sign Up page
-        
----------------------------------------------------------------------
-
-    scenerio: Click on a random post 
-        WHEN: User clicks on a post
-        THEN: the application should redirect to the post that was clicked
+    scenerio: Click on a 'user post' 
+        WHEN: User clicks on a 'post'
+        THEN: the application should redirect to the 'users post'

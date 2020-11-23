@@ -4,7 +4,7 @@ Description: .
     Background: User is not logged in and is on the public landing page
         GIVEN: a user navigates to the conduit public landing page
         WHEN: The application Page loads
-        THEN: the nav bar should display Conduit logo 
+        THEN: the nav bar should display 'Conduit logo', 'Home', 'Sign in', and 'Sign up' buttons 
 
 ---------------------------------------------------------------------
 
@@ -24,20 +24,20 @@ Description: .
         WHEN: The user clicks on a 'user profile link'
         THEN: the application should redirect to the sign in page
 
----------------------------------------------------------------------
+-----------------------------Homework--------------------------------
 
     scenerio: Click on 'Sign In'
         WHEN: The user clicks 'Sign In'
         THEN: the application should redirect to the sign in page
         And: Sign in and 'Need and account' button should be visible
         
----------------------------------------------------------------------
+-----------------------------Homework--------------------------------
 
     scenerio: Click on 
         WHEN: The user clicks 'Sign Up'
-        THEN: the application should redirect to the sign Up page
+        THEN: the application should redirect to the 'sign Up' page
         
----------------------------------------------------------------------
+-----------------------------Homework--------------------------------
 
     scenerio: Click on a random post 
         WHEN: User clicks on a post
