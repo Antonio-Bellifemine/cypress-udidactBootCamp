@@ -1,44 +1,47 @@
-Feature: Module 2 - Public Landing Page
-Description: .
+Feature: Module 4 - 'Sign In' Page
+Description: User is on the 'Sign In' Page
 
-    Background: 
-        GIVEN: 
-        WHEN: 
-        THEN: 
-
----------------------------------------------------------------------
-
-    scenerio:
-        WHEN:
-        THEN:
+    Background: User is not logged in
+        GIVEN: A user clicks on the 'Sign In' button in the navigation bar
+        WHEN: the 'Sign In' page loads
+        THEN: a Sign in headline should be visible
+        AND: a 'Need an account?' clickable link should be directly underneath
 
 ---------------------------------------------------------------------
 
-    scenerio: 
-        WHEN:
-        THEN:
+        WHEN: the 'Sign In' page loads
+        THEN: A 'Username' input should be visible
+        AND: 'Password' should be visible 
 
 ---------------------------------------------------------------------
 
-    scenerio:
-        WHEN:
-        THEN:
+        WHEN: the 'Sign In' page loads
+        THEN: 'Sign In' Button should be visible
 
 ---------------------------------------------------------------------
 
-    scenerio:
-        WHEN:
-        THEN: 
-        And:
+    scenerio: click 'Sign In' button with no username or password
+        GIVEN: the {userName} and {passWord} inputs are empty
+        WHEN: user clicks sign in
+        THEN: the user should be alerted
+
+-----------------------------Homework--------------------------------
+
+    scenerio: click 'Sign In' button with invalid username and password
+        GIVEN: the {userName} and {passWord} inputs are not valid
+        WHEN: user clicks sign in
+        THEN: the user should be alerted
         
----------------------------------------------------------------------
+-----------------------------Homework--------------------------------
 
-    scenerio:
-        WHEN:
-        THEN:
+    scenerio: click 'Sign In' button with valid username and password
+        GIVEN: the {userName} and {passWord} inputs are valid
+        WHEN: user clicks sign in
+        THEN: the user should be logged in and directed to the 'Home' Page
         
----------------------------------------------------------------------
+-----------------------------Homework--------------------------------
 
-    scenerio:
-        WHEN:
-        THEN:
+    scenerio: click 'Need an account?'
+        WHEN: User clicks on 'Need an account?'
+        THEN: the 'Sign Up' Page should display
+        

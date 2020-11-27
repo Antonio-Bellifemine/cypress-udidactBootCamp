@@ -39,6 +39,6 @@ Description: .
         
 -----------------------------Homework--------------------------------
 
-    scenerio: Click on a random post 
+    scenerio: Click on a 'random post'
         WHEN: User clicks on a post
         THEN: the application should redirect to the post that was clicked

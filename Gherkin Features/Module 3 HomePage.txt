@@ -1,9 +1,9 @@
 Feature: Module 2 - Home Page
 Description: This Feature will test the 'Home Page' for a user that is logged in
 
-    Background: User is not logged in
-        GIVEN: a user logs in
-        WHEN: The application Page loads
+    scenerio: a user logs in
+        GIVEN: a  user successfully logs in
+        WHEN: The 'Home Page' loads
         AND: the user has no current articles
         THEN: 'your feed' should display "No articles are here... yet."
 
@@ -15,31 +15,31 @@ Description: This Feature will test the 'Home Page' for a user that is logged in
 
 ---------------------------------------------------------------------
 
+    scenerio: User clicks on 'Global Feed' 
+        WHEN: User clicks on the 'Global Feed' button
+        THEN: The 'global feed' list should populate
+
+-----------------------------Homework--------------------------------
+Background: 'Global Feed' is selected
     scenerio: Click on a 'like' button
         WHEN: The user clicks on a like button 
         THEN: the like counter for that post should increase by 1
 
----------------------------------------------------------------------
-
+-----------------------------Homework--------------------------------
+Background: 'Global Feed' is selected
   scenerio: Click on a 'like' button to dislike
         WHEN: The user clicks on a like button
         AND: Clicks the same like button again
         THEN: the like counter for that post should decrease by 1
 
----------------------------------------------------------------------
-
-    scenerio: Click on a users 'username'
+-----------------------------Homework--------------------------------
+Background: 'Global Feed' is selected
+    scenerio: Click on a users 'username' in the nav bar
         WHEN: The user clicks on a 'user profile link'
         THEN: the application should redirect to the 'user profile'
-
----------------------------------------------------------------------
-
-    scenerio: 
-        WHEN: 
-        THEN: 
         
----------------------------------------------------------------------
-
+-----------------------------Homework--------------------------------
+Background: 'Global Feed' is selected
     scenerio: Click on a 'user post' 
         WHEN: User clicks on a 'post'
         THEN: the application should redirect to the 'users post'
