@@ -1,0 +1,45 @@
+Feature: Module 6 - 'New Post' Page
+Description: User is on the 'New Post' Page
+
+    Background: User is logged in 
+        GIVEN: The user navigates to the 'New Post' page
+        WHEN: the page loads
+        THEN: 4 input boxes should be visible
+
+---------------------------------------------------------------------
+
+    scenerio: User clicks 'Publish Article' without required info
+        WHEN: User clicks 'Publish Article'
+        THEN: The user should be notified with red errors above the Article Title input
+
+---------------------------------------------------------------------
+
+    scenerio: User clicks 'Publish Article' with required info
+        GIVEN: A User fills out the required info for a 'New Post'
+        WHEN: User clicks 'Publish Article'
+        THEN: The user should be notified with red errors above the Article Title input
+
+---------------------------------------------------------------------
+
+    scenerio:
+        WHEN:
+        THEN:
+
+---------------------------------------------------------------------
+
+    scenerio:
+        WHEN:
+        THEN: 
+        And:
+        
+---------------------------------------------------------------------
+
+    scenerio:
+        WHEN:
+        THEN:
+        
+---------------------------------------------------------------------
+
+    scenerio:
+        WHEN:
+        THEN:
