@@ -20,26 +20,27 @@ Description: This Feature will test the 'Home Page' for a user that is logged in
         THEN: The 'global feed' list should populate
 
 -----------------------------Homework--------------------------------
-Background: 'Global Feed' is selected
+Background: 
+    GIVEN: 'Global Feed' is selected
     scenerio: Click on a 'like' button
         WHEN: The user clicks on a like button 
         THEN: the like counter for that post should increase by 1
 
 -----------------------------Homework--------------------------------
-Background: 'Global Feed' is selected
+
   scenerio: Click on a 'like' button to dislike
         WHEN: The user clicks on a like button
         AND: Clicks the same like button again
         THEN: the like counter for that post should decrease by 1
 
 -----------------------------Homework--------------------------------
-Background: 'Global Feed' is selected
+
     scenerio: Click on a users 'username' in the nav bar
         WHEN: The user clicks on a 'user profile link'
         THEN: the application should redirect to the 'user profile'
         
 -----------------------------Homework--------------------------------
-Background: 'Global Feed' is selected
+
     scenerio: Click on a 'user post' 
         WHEN: User clicks on a 'post'
         THEN: the application should redirect to the 'users post'

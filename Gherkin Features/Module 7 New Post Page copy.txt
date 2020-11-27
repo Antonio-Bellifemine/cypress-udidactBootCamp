@@ -8,17 +8,16 @@ Description: User Created a New Post
 
 ---------------------------------------------------------------------
 
-    scenerio: User has just clicked New Post and is redirected to the new post
-        WHEN: the new post loads
-        THEN: and 'Edit Article' button
-        AND: a 'Delete Article' Button should be Active and Be visible
+        GIVEN: A User is on a newly created post
+        THEN: 2 'Edit Article' Buttons should be Active and Be visible
+        AND: 2 'Delete Article' Buttons should be Active and Be visible
 
 ---------------------------------------------------------------------
 
-    scenerio: 
-        GIVEN:
-        WHEN: 
-        THEN: 
+        GIVEN: A User is on a post
+        THEN: The userName of the person that created the post should be visible
+        AND: A timestamp of when the post was created should be visible
+        AND: The User Avatar should be visible
 
 ---------------------------------------------------------------------
 

@@ -1,8 +1,8 @@
 Feature: Module 5 - Registration Page
 Description: The user is on the registration page
 
-    Background: User is not logged in
-        GIVEN: A user clicks on the 'Sign Up' button in the navigation bar
+    Background:
+        GIVEN: A user is logged in and clicks on the 'Sign Up' button in the navigation bar
         WHEN: the 'Sign Up' page loads
         THEN: a Sign Up headline should be visible
         AND: a 'Have an account?' clickable link should be directly underneath

@@ -1,8 +1,8 @@
 Feature: Module 6 - 'Create New Post' Page
 Description: User is on the 'New Post' Page
 
-    Background: User is logged in 
-        GIVEN: The user navigates to the 'New Post' page
+    Background:
+        GIVEN: The user is logged in and navigates to the 'New Post' page
         WHEN: the page loads
         THEN: 4 input boxes should be visible
 

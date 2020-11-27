@@ -1,8 +1,8 @@
 Feature: Module 4 - 'Sign In' Page
 Description: User is on the 'Sign In' Page
 
-    Background: User is not logged in
-        GIVEN: A user clicks on the 'Sign In' button in the navigation bar
+    Background:
+        GIVEN: A user is not logged in clicks on the 'Sign In' button in the navigation bar
         WHEN: the 'Sign In' page loads
         THEN: a Sign in headline should be visible
         AND: a 'Need an account?' clickable link should be directly underneath
