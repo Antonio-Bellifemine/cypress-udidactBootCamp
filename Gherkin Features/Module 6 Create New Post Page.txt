@@ -1,4 +1,4 @@
-Feature: Module 6 - 'New Post' Page
+Feature: Module 6 - 'Create New Post' Page
 Description: User is on the 'New Post' Page
 
     Background: User is logged in 
@@ -20,26 +20,3 @@ Description: User is on the 'New Post' Page
         THEN: The user should be notified with red errors above the Article Title input
 
 ---------------------------------------------------------------------
-
-    scenerio:
-        WHEN:
-        THEN:
-
----------------------------------------------------------------------
-
-    scenerio:
-        WHEN:
-        THEN: 
-        And:
-        
----------------------------------------------------------------------
-
-    scenerio:
-        WHEN:
-        THEN:
-        
----------------------------------------------------------------------
-
-    scenerio:
-        WHEN:
-        THEN:

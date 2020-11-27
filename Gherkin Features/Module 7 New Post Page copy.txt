@@ -1,23 +1,24 @@
-Feature: Module 6 - 'New Post' Page
-Description: User is on the 'New Post' Page
+Feature: Module 7 - 'New Post' Page
+Description: User Created a New Post
 
-    Background: User is logged in 
-        GIVEN: The user navigates to the 'New Post' page
+    Background: User has just filled required info and created a new post
+        GIVEN: The user has just created a new post
         WHEN: the page loads
-        THEN: 4 input boxes should be visible
+        THEN: all contents of the post should be visible
 
 ---------------------------------------------------------------------
 
-    scenerio: User clicks 'Publish Article' without required info
-        WHEN: User clicks 'Publish Article'
-        THEN: The user should be notified with red errors above the Article Title input
+    scenerio: User has just clicked New Post and is redirected to the new post
+        WHEN: the new post loads
+        THEN: and 'Edit Article' button
+        AND: a 'Delete Article' Button should be Active and Be visible
 
 ---------------------------------------------------------------------
 
-    scenerio: User clicks 'Publish Article' with required info
-        GIVEN: A User fills out the required info for a 'New Post'
-        WHEN: User clicks 'Publish Article'
-        THEN: The user should be notified with red errors above the Article Title input
+    scenerio: 
+        GIVEN:
+        WHEN: 
+        THEN: 
 
 ---------------------------------------------------------------------
 
