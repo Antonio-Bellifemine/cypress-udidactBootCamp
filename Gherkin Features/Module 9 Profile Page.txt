@@ -14,34 +14,17 @@ Description: This feature tests the 'User Profile' Page
         WHEN: The user clicks 'Favorited Articles'
         THEN: 'No articles are here... yet.' should be visible
 
----------------------------------------------------------------------
+-----------------------------Homework--------------------------------
 
     scenerio: User clicks on 'Favorited Articles'
         GIVEN: A user has favorited articles
         WHEN: The user clicks 'Favorited Articles'
         THEN: The 'Users' Favorited Articles should be visible
 
----------------------------------------------------------------------
+-----------------------------Homework--------------------------------
 
     scenerio: User clicks on 'Edit Profile Settings' button
         GIVEN: A User clicks 'Edit Profile Settings'
         THEN: The user should be redirected to the 'Settings Page'
 
 ---------------------------------------------------------------------
-
-    scenerio:
-        WHEN:
-        THEN: 
-        And:
-        
----------------------------------------------------------------------
-
-    scenerio:
-        WHEN:
-        THEN:
-        
----------------------------------------------------------------------
-
-    scenerio:
-        WHEN:
-        THEN:
