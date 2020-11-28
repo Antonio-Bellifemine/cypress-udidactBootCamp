@@ -1,0 +1,25 @@
+Feature: Module 8 - Settings Page
+Description: This Feature will test the user settings area
+
+    Background:
+        GIVEN: Given a logged in user clicks on the 'Settings' button
+        WHEN: The settings page loads
+        THEN: A Your Settings Headline should appear
+
+---------------------------------------------------------------------
+
+        THEN: There should be a 'Profile Picture URL' Input visible
+        AND: A 'Your Name' input should be visibleAND:
+        AND: an 'Email' input should be visible
+        AND: A 'New Password' Input should be visible
+        AND: A Green 'Update Settings' Button should be visible and be active
+        AND: An 'Or click here to log out' Button should be visible and be active
+
+---------------------------------------------------------------------
+
+    scenerio: Click on 'Update Settings' Button
+        WHEN: The user clicks on 'Update Settings' 
+        THEN: The user should be redirected to 'My Articles'
+        AND: All of the users articles should be visible
+
+---------------------------------------------------------------------
