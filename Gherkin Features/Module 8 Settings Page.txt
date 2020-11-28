@@ -4,16 +4,17 @@ Description: This Feature will test the user settings area
     Background:
         GIVEN: Given a logged in user clicks on the 'Settings' button
         WHEN: The settings page loads
-        THEN: A Your Settings Headline should appear
+        THEN: A 'Your Settings' Headline should appear
 
 ---------------------------------------------------------------------
 
+        WHEN: The settings page loads
         THEN: There should be a 'Profile Picture URL' Input visible
-        AND: A 'Your Name' input should be visibleAND:
-        AND: an 'Email' input should be visible
-        AND: A 'New Password' Input should be visible
+        AND: 'Your Name' input should be visible
+        AND: 'Email' input should be visible
+        AND: 'New Password' Input should be visible
         AND: A Green 'Update Settings' Button should be visible and be active
-        AND: An 'Or click here to log out' Button should be visible and be active
+        AND: A 'Or click here to log out' Button should be visible and be active
 
 -----------------------------Homework--------------------------------
 
