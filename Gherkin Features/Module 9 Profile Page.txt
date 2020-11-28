@@ -1,28 +1,31 @@
-Feature: Module 2 - Public Landing Page
-Description: .
+Feature: Module 9 - Profile Page
+Description: This feature tests the 'User Profile' Page
 
     Background: 
-        GIVEN: 
-        WHEN: 
-        THEN: 
+        GIVEN: a user is on the 'User Profile' Page
+        THEN: The 'User Avatar' Should be visible
+        AND: 'UserName' Should be visible
+        AND: an 'Edit Profile Settings' button Should be visible
 
 ---------------------------------------------------------------------
 
-    scenerio:
-        WHEN:
-        THEN:
+    scenerio: User clicks on 'Favorited Articles'
+        GIVEN: A user has no favorited articles
+        WHEN: The user clicks 'Favorited Articles'
+        THEN: 'No articles are here... yet.' should be visible
 
 ---------------------------------------------------------------------
 
-    scenerio: 
-        WHEN:
-        THEN:
+    scenerio: User clicks on 'Favorited Articles'
+        GIVEN: A user has favorited articles
+        WHEN: The user clicks 'Favorited Articles'
+        THEN: The 'Users' Favorited Articles should be visible
 
 ---------------------------------------------------------------------
 
-    scenerio:
-        WHEN:
-        THEN:
+    scenerio: User clicks on 'Edit Profile Settings' button
+        GIVEN: A User clicks 'Edit Profile Settings'
+        THEN: The user should be redirected to the 'Settings Page'
 
 ---------------------------------------------------------------------
 
