@@ -12,7 +12,7 @@ Description: User is on the 'New Post' Page
         WHEN: User clicks 'Publish Article'
         THEN: The user should be notified with red errors above the Article Title input
 
----------------------------------------------------------------------
+-----------------------------Homework--------------------------------
 
     scenerio: User clicks 'Publish Article' with required info
         GIVEN: A User fills out the required info for a 'New Post'
