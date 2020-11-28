@@ -7,7 +7,7 @@ Description: .
         THEN: the nav bar should display 'Conduit logo', 
         AND: 'Home', Button 
         AND: 'Sign in' Button
-        AND: 'Sign up' Button 
+        AND: 'Sign up' Button
 
 ---------------------------------------------------------------------
 

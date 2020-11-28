@@ -4,7 +4,7 @@ Runs Cypress tests to completion. By default, cypress run will run all tests hea
 
 cypress run [options]
 
-Option	Description
+Option	                Description
 --browser, -b   ------>	(Run Cypress in the browser with the given name. If a filesystem path is supplied, Cypress will attempt to use the browser at that path.)
 --ci-build-id	------> (Specify a unique identifier for a run to enable grouping or parallelization.)
 --config, -c	------> (Specify configuration)
