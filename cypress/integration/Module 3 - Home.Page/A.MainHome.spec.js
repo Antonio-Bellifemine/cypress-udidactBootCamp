@@ -9,5 +9,5 @@ describe('', () => {
         cy.get('a').contains('Have an account?').should('be.visible')
     });
     
-})
+});
 
