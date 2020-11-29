@@ -11,19 +11,27 @@ Description: The user is on the registration page
 
         WHEN: the 'Sign Up' page loads
         THEN: A 'Username' input should be visible
+        AND: An 'email' input should be visible
         AND: 'Password' should be visible 
 
 ---------------------------------------------------------------------
 
+    scenerio: click 'Sign Up' button with valid username and password
+        GIVEN: the {userName}, {email}, and {passWord} inputs are valid
+        WHEN: user clicks Sign Up
+        THEN: the user should be logged in and directed to the 'Home' Page
+
+-----------------------------Homework--------------------------------
+
         WHEN: the 'Sign Up' page loads
         THEN: 'Sign Up' Button should be visible
 
----------------------------------------------------------------------
+-----------------------------Homework--------------------------------
 
-    scenerio: click 'Sign Up' button with no username or password
-        GIVEN: the {userName}, {email}, and {passWord} inputs are empty
+    scenerio: click 'Sign Up' button with valid username and password
+        GIVEN: the {userName}, {email}, and {passWord} inputs are valid
         WHEN: user clicks Sign Up
-        THEN: the user should be alerted
+        THEN: the user should be logged in and directed to the 'Home' Page
 
 -----------------------------Homework--------------------------------
 
@@ -31,13 +39,6 @@ Description: The user is on the registration page
         GIVEN: the {userName}, {email}, and {passWord} inputs are not valid
         WHEN: user clicks Sign Up
         THEN: the user should be alerted
-        
------------------------------Homework--------------------------------
-
-    scenerio: click 'Sign Up' button with valid username and password
-        GIVEN: the {userName}, {email}, and {passWord} inputs are valid
-        WHEN: user clicks Sign Up
-        THEN: the user should be logged in and directed to the 'Home' Page
         
 -----------------------------Homework--------------------------------
 
