@@ -11,7 +11,8 @@ Description: User is on the 'Sign In' Page
 
         WHEN: the 'Sign In' page loads
         THEN: A 'Username' input should be visible
-        AND: 'Password' should be visible 
+        AND: 'Password' should be visible
+        AND: A Green 'Sign In' Button should be visible and active
 
 ---------------------------------------------------------------------
 
