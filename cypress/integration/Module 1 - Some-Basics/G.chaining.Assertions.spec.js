@@ -10,7 +10,7 @@ before('visit registration page', () => {
 
 })
 
-describe('public landing page displays properly', () => {
+describe('Chaining Assertions: Check public landing page displays properly', () => {
 
     it('confirm conduit logo is visible and has correct sub headline', () => {
         cy.get('div.container').eq(1).children().eq(0).should('be.visible').and('have.text', 'conduit')

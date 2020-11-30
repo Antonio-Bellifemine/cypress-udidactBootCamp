@@ -2,7 +2,7 @@ before('visit registration page', () => {
     cy.visit('');
 })
 
-describe("We'll cover some basic assertions", () => {
+describe("Covering some basic assertions", () => {
 
     it('verify nav bar on public landing page contains logo and expected buttons', () => {
         cy.get('a').contains('conduit').should('be.visible');
