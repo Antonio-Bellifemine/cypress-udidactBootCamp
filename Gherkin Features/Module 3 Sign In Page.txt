@@ -16,11 +16,6 @@ Description: User is on the 'Sign In' Page
 
 ---------------------------------------------------------------------
 
-        WHEN: the 'Sign In' page loads
-        THEN: 'Sign In' Button should be visible
-
----------------------------------------------------------------------
-
     scenerio: click 'Sign In' button with no username or password
         GIVEN: the {userName} and {passWord} inputs are empty
         WHEN: user clicks sign in
