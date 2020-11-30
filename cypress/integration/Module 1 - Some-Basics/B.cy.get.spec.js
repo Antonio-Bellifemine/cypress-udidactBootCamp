@@ -10,7 +10,7 @@ describe('using cy.get',() => {
     });
 
     it('get nav-link', () => {
-        cy.get('class="nav-link"');
+        cy.get('[class="nav-link"]');
     });
 
 

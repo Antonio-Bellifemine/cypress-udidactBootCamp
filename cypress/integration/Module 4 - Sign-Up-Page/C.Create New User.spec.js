@@ -19,7 +19,13 @@ describe('Creating a new user', () => {
         // cy.get('input').eq(2).should('be.visible').type(passWord, {delay: 75});
 
         cy.get('button').contains('Sign up').click();
-        cy.get('a').contains("Sign in").should('not.be.visible');
-        cy.get('a').contains("Need an account?").should('not.be.visible');
+        cy.waitUntil(() => 
+                cy.url().should('eq', 'https://conduit-af252.firebaseapp.com/#/'),
+            {
+                timeout: 2000, // waits up to 2000 ms, default to 5000
+                interval: 500, // performs the check every 500 ms, default to 200
+                errorMsg: 'This is a custom error message' // overrides the default error message
+            });
+        cy.get('a.nav-link').contains('Your Feed').should('be.visible')
     });
 }); 
