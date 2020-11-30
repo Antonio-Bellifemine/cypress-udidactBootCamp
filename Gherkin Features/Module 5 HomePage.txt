@@ -1,4 +1,4 @@
-Feature: Module 2 - Home Page
+Feature: Module 5 - Home Page
 Description: This Feature will test the 'Home Page' for a user that is logged in
 
     scenerio: a user logs in

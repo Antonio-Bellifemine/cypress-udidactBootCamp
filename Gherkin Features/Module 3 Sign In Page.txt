@@ -1,4 +1,4 @@
-Feature: Module 4 - 'Sign In' Page
+Feature: Module 3 - 'Sign In' Page
 Description: User is on the 'Sign In' Page
 
     Background:

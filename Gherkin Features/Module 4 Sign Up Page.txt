@@ -1,4 +1,4 @@
-Feature: Module 5 - Registration Page
+Feature: Module 4 - Registration Page
 Description: The user is on the registration page
 
     Background:
