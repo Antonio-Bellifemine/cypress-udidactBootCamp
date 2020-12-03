@@ -20,12 +20,7 @@ describe("Covering some basic assertions", () => {
         cy.get('a.nav-link').eq(1).should('contain', 'Sign in')
     });
 
-});
-
-
-// use this section to explain how to click the correct elements when multiple are returned
-describe("Dealing with failing tests due to multiple elements being returned", () => {
-
+    // use this section to explain how to click the correct elements when multiple are returned     
     it('How do I click the right one!?', () => {
         cy.get('a.nav-link').click()
         // cy.get('a.nav-link').contains('Sign in').click()
