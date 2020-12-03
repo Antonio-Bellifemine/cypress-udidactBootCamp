@@ -9,7 +9,7 @@ Cypress.Commands.add('login', (userName, pswd) => {
     cy.get('input:eq(1)').type(pswd, {delay: 100});
     cy.get('button').contains('Sign in').click();
     cy.waitUntil(() =>
-        cy.url().should('eql', homeUrl),
+        cy.location('href').should('eql', homeUrl),
         {
             timeout: 6000, // waits up to 2000 ms, default to 5000
             interval: 1000, // performs the check every 1000 ms, default to 200
