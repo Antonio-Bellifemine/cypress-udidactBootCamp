@@ -17,6 +17,7 @@ Cypress.Commands.add('login', (userName, pswd) => {
             errorMsg: 'This is a custom error message' // overrides the default error message
         });
 });
+
 // Logout
 Cypress.Commands.add('logout', () => {
     let settingsUrl = "https://conduit-af252.firebaseapp.com/#/profile/UdidactCamp2020";
