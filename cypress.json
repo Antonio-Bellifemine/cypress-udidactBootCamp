@@ -24,5 +24,9 @@
     "trashAssetsBeforeRuns": true,
     "videosFolder": "",
     "video": false
+  },
+  "env": {
+    "UserName": "test9118@testing.com",
+    "Password": "UdidactCamp2020"
   }
 }

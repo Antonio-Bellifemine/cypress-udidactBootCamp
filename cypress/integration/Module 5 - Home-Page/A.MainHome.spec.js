@@ -1,5 +1,5 @@
 before(() => {
-    cy.login('test9118@testing.com', 'UdidactCamp2020');
+    cy.login(Cypress.env('UserName'), Cypress.env('Password'));
 });
 
 describe('Main Home Page', () => {

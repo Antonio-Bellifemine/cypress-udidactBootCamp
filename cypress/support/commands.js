@@ -5,7 +5,7 @@ const chance = new Chance()
 // Login
 Cypress.Commands.add('login', (userName, pswd) => {
     let homeUrl = "https://conduit-af252.firebaseapp.com/#/";
-    cy.visit('login');
+    cy.visit('login', {timeout: 10000});
     cy.get('input:eq(0)').type(userName, {delay: 100});
     cy.get('input:eq(1)').type(pswd, {delay: 100});
     cy.get('button').contains('Sign in').click();
