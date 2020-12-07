@@ -27,20 +27,20 @@ Description: .
         WHEN: The user clicks on a 'user profile link'
         THEN: the application should redirect to the sign in page
 
------------------------------Homework--------------------------------
+-----------------------------Challenge--------------------------------
 
     scenerio: Click on 'Sign In'
         WHEN: The user clicks 'Sign In'
         THEN: the application should redirect to the sign in page
         And: Sign in and 'Need and account' button should be visible
         
------------------------------Homework--------------------------------
+-----------------------------Challenge--------------------------------
 
     scenerio: Click on 
         WHEN: The user clicks 'Sign Up'
         THEN: the application should redirect to the 'sign Up' page
         
------------------------------Homework--------------------------------
+-----------------------------Challenge--------------------------------
 
     scenerio: Click on a 'random post'
         WHEN: User clicks on a post

@@ -37,26 +37,26 @@ Description: User Created a New Post
         WHEN: The User clicks 'Edit Article'
         THEN: The user should be directed to the 'Edit Article' Page
 
------------------------------Homework--------------------------------
+-----------------------------Challenge--------------------------------
 
     scenerio: User clicks 'Post Comment' without any comment filled in
         WHEN: A user clicks 'Post Comment' without a comment
         THEN: The User should be notified with a red alert above the comment section
         
------------------------------Homework--------------------------------
+-----------------------------Challenge--------------------------------
 
     scenerio: User clicks 'Post Comment' with a comment filled in 
         WHEN: User clicks 'Post Comment'
         THEN: the Comment should appear directly below the new 'Comment section'
 
------------------------------Homework--------------------------------
+-----------------------------Challenge--------------------------------
     Background:
         GIVEN: A user has successfully posted a new comment
         THEN: The userName of the person that created the comment should be visible
         AND: A timestamp of when the comment was created should be visible
         AND: The User Avatar should be visible
         
------------------------------Homework--------------------------------
+-----------------------------Challenge--------------------------------
 
         THEN: The userName of the person that created the comment should be visible
         AND: A timestamp of when the comment was created should be visible

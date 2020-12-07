@@ -16,7 +16,7 @@ Description: This Feature will test the user settings area
         AND: A Green 'Update Settings' Button should be visible and be active
         AND: A 'Or click here to log out' Button should be visible and be active
 
------------------------------Homework--------------------------------
+-----------------------------Challenge--------------------------------
 
     scenerio: Click on 'Update Settings' Button
         WHEN: The user clicks on 'Update Settings' 

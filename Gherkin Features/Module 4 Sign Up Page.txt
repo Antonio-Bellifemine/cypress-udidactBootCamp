@@ -21,26 +21,26 @@ Description: The user is on the registration page
         WHEN: user clicks Sign Up
         THEN: the user should be logged in and directed to the 'Home' Page
 
------------------------------Homework--------------------------------
+-----------------------------Challenge--------------------------------
 
         WHEN: the 'Sign Up' page loads
         THEN: 'Sign Up' Button should be visible
 
------------------------------Homework--------------------------------
+-----------------------------Challenge--------------------------------
 
     scenerio: click 'Sign Up' button with valid username and password
         GIVEN: the {userName}, {email}, and {passWord} inputs are valid
         WHEN: user clicks Sign Up
         THEN: the user should be logged in and directed to the 'Home' Page
 
------------------------------Homework--------------------------------
+-----------------------------Challenge--------------------------------
 
     scenerio: click 'Sign Up' button with invalid username and password
         GIVEN: the {userName}, {email}, and {passWord} inputs are not valid
         WHEN: user clicks Sign Up
         THEN: the user should be alerted
         
------------------------------Homework--------------------------------
+-----------------------------Challenge--------------------------------
 
     scenerio: click 'Have an account?'
         WHEN: User clicks on 'Have an account?'
