@@ -1,6 +1,6 @@
 import 'cypress-wait-until';
-const Chance = require('chance')
-const chance = new Chance()
+const { Chance } = require("chance");
+let chance = new Chance();
 
 // Login
 Cypress.Commands.add('login', (userName, pswd) => {
@@ -21,7 +21,7 @@ Cypress.Commands.add('login', (userName, pswd) => {
 // Logout
 Cypress.Commands.add('logout', () => {
     let settingsUrl = "https://conduit-af252.firebaseapp.com/#/profile/UdidactCamp2020";
-    cy.get('a[href="#/profile/UdidactCamp2020"]').click();
+    cy.get('a[href="#/profile/UdidactCamp2020"]').eq(0).click();
     cy.waitUntil(() =>
         cy.location('href').should('eql', settingsUrl),
         {
