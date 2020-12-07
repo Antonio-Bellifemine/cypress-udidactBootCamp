@@ -12,11 +12,9 @@ describe("Clicking a like button while Logged in & on the Home Page", () => {
         cy.waitUntil(() =>
             cy.get('a').contains('Global Feed'),
             {
-
                 timeout: 5000, // waits up to 2000 ms, default to 5000
                 interval: 500, // performs the check every 500 ms, default to 200
                 errorMsg: 'This is a custom error message' // overrides the default error message
-
             }).click();
 
         /*    

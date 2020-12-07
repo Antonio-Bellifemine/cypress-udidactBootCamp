@@ -5,7 +5,7 @@ const chance = new Chance()
 // Login
 Cypress.Commands.add('login', (userName, pswd) => {
     let homeUrl = "https://conduit-af252.firebaseapp.com/#/";
-    cy.visit('login', {timeout: 10000});
+    cy.visit('login');
     cy.get('input:eq(0)').type(userName, {delay: 100});
     cy.get('input:eq(1)').type(pswd, {delay: 100});
     cy.get('button').contains('Sign in').click();
@@ -21,7 +21,7 @@ Cypress.Commands.add('login', (userName, pswd) => {
 // Logout
 Cypress.Commands.add('logout', () => {
     let settingsUrl = "https://conduit-af252.firebaseapp.com/#/profile/UdidactCamp2020";
-    cy.get('li.nav-item').contains(' UdidactCamp2020 ').click();
+    cy.get('a[href="#/profile/UdidactCamp2020"]').click();
     cy.waitUntil(() =>
         cy.location('href').should('eql', settingsUrl),
         {

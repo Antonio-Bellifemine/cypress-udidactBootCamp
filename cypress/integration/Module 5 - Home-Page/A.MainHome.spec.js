@@ -12,7 +12,7 @@ describe('Main Home Page', () => {
             cy.get(navItems).eq(2).should('contain', 'New Post')
             cy.get(navItems).eq(3).should('contain', 'Settings')
             cy.get(navItems).eq(4).should('contain', 'UdidactCamp2020')
-        })
+        });
     });
     
 });

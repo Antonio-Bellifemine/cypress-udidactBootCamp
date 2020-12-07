@@ -17,6 +17,6 @@ Description: User is on the 'New Post' Page
     scenerio: User clicks 'Publish Article' with required info
         GIVEN: A User fills out the required info for a 'New Post'
         WHEN: User clicks 'Publish Article'
-        THEN: The user should be notified with red errors above the Article Title input
+        THEN: The user should be redirected to the new Post/Article
 
 ---------------------------------------------------------------------
