@@ -10,13 +10,13 @@ PERSON
     Generate a random age
 
     chance.age();
-        => 45
+        Example: => 45
         Default range is between 1 and 120
 
     Optionally specify one of a handful of enumerated age types:
 
     chance.age({type: 'child'});
-        => 9
+        Example: => 9
         Allowed types are: child, teen, adult, senior
 
 --------------------------------------------------------------
@@ -27,15 +27,15 @@ PERSON
     Generate a random first name
 
     Chance.first();
-        => 'Leila'
+        Example: => 'Leila'
         Optionally specify a gender to limit first names to that gender
 
     Chance.first({ gender: "female" });
-        => 'Emma'
+        Example: => 'Emma'
         Optionally specify a nationality to limit first names to those most common of that nationality
 
     Chance.first({ nationality: "it" });
-        => 'Alberto'
+        Example: => 'Alberto'
 
         Note, currently support for nationality is limited to: 'us', 'it'.
 
@@ -47,14 +47,14 @@ PERSON
     Generate a random last name
 
     Chance.last();
-        => 'Mago'
+        Example: => 'Mago'
         Optionally specify a nationality to limit first names to those most common of that nationality
 
     Chance.last({ nationality: 'it' });
-        => 'Giovannini'
+        Example: => 'Giovannini'
         Note, currently support for nationality is limited to: 'en', 'it', 'nl', 'uk', 'de', 'jp', 'es', 'fr'.
 
-    -----------------------------------------------------------
+-----------------------------------------------------------
 
 // Avatar usage
     chance.avatar()
@@ -64,15 +64,15 @@ PERSON
     Return a URL to a random avatar from Gravatar.
 
     chance.avatar()
-    => '//www.gravatar.com/avatar/41f84bab4a852971eb1d26a287acb763'
+    Example: => '//www.gravatar.com/avatar/41f84bab4a852971eb1d26a287acb763'
     By default, a url is returned without a protocol. Specify one to get a random url but with a known protocol
 
     chance.avatar({protocol: 'https'})
-    => 'https://www.gravatar.com/avatar/f40260c4058cc904b7db652c26099966'
+    Example: => 'https://www.gravatar.com/avatar/f40260c4058cc904b7db652c26099966'
     Optionally specify a file extension to get one of a known type
 
     chance.avatar({fileExtension: 'jpg'})
-    => '//www.gravatar.com/avatar/76697df5874c854e3cc8fde1200b4298.jpg'
+    Example: => '//www.gravatar.com/avatar/76697df5874c854e3cc8fde1200b4298.jpg'
 
 -----------------------------------------------------------
 
@@ -83,17 +83,17 @@ PERSON
         Generate a random birthday
 
         chance.birthday();
-            => Fri Aug 16 1985 00:00:00 GMT-0400 (EDT)
+            Example: => Fri Aug 16 1985 00:00:00 GMT-0400 (EDT)
             By default, returns an actual JavaScript Date object.
 
         Optionally specify it be returned as a string.
 
         chance.birthday({string: true});
-            => '4/1/1968'
+            Example: => '4/1/1968'
             By default returns in MM/DD/YYYY format. Can specify DD/MM/YYYY as follows:
 
         chance.birthday({string: true, american: false});
-            => '28/6/1993'
+            Example: => '28/6/1993'
             For more complex date formats, use the Moment library.
 
 -----------------------------------------------------------
@@ -107,7 +107,7 @@ WEB
     Return a random sentence populated by semi-pronounceable random (nonsense) words.
 
       chance.sentence();
-        => 'Witpevze mappos isoletu fo res bi geow pofin mu rupoho revzi utva ne.'
+        Example: => 'Witpevze mappos isoletu fo res bi geow pofin mu rupoho revzi utva ne.'
     
         The sentence starts with a capital letter, and ends with a period.
 
@@ -118,7 +118,7 @@ WEB
         Optionally specify the number of words in the sentence.
 
         chance.sentence({ words: 5 });
-         => 'Waddik jeasmov cakgilta ficub up.'
+         Example: => 'Waddik jeasmov cakgilta ficub up.'
 ========================================
 WEB
 ========================================
@@ -128,11 +128,11 @@ WEB
         Return a random email with a random domain.
 
     chance.email()
-        => 'kawip@piklojzob.gov'
+        Example: => 'kawip@piklojzob.gov'
         Optionally specify a domain and the email will be random but the domain will not.
 
     chance.email({domain: 'example.com'})
-        => 'giigjom@example.com'
+        Example: => 'giigjom@example.com'
 
 
 
@@ -141,7 +141,7 @@ COMPLETE LIST OF CHANCE USAGES
 https://chancejs.com
 ==============================
 
-[Basics]
+'[Basics]'
     bool
     falsy
     character
@@ -151,12 +151,12 @@ https://chancejs.com
     natural
     prime
     string
-[Text]
-    paragraph
-    sentence
-    syllable
-    word
-[Person]
+'[Text]'
+   paragraph
+   sentence
+   syllable
+   word
+'[Person]'
     age
     birthday
     cf
@@ -168,15 +168,15 @@ https://chancejs.com
     prefix
     ssn
     suffix
-[Thing]
+'[Thing]'
     animal
-[Mobile]
+'[Mobile]'
     android_id
     apple_token
     bb_pin
     wp7_anid
     wp8_anid2
-[Web]
+'[Web]'
     avatar
     color
     company
@@ -192,7 +192,7 @@ https://chancejs.com
     tld
     twitter
     url
-[Location]
+'[Location]'
     address
     altitude
     areacode
@@ -211,7 +211,7 @@ https://chancejs.com
     state
     street
     zip
-[Time]
+'[Time]'
     ampm
     date
     hammertime
@@ -224,7 +224,7 @@ https://chancejs.com
     timezone
     weekday
     year
-[Finance]
+'[Finance]'
     cc
     cc_type
     currency
@@ -234,7 +234,7 @@ https://chancejs.com
     exp
     exp_month
     exp_year
-[Helpers]
+'[Helpers]'
     capitalize
     mixin
     pad
@@ -243,7 +243,7 @@ https://chancejs.com
     pickset
     set
     shuffle
-[Miscellaneous]
+'[Miscellaneous]'
     coin
     dice
     guid
