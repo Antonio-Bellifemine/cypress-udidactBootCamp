@@ -6,24 +6,17 @@ Description: User Created a New Post
         THEN: 2 'Edit Article' Buttons should be Active and Be visible
         AND: 2 'Delete Article' Buttons should be Active and Be visible
 
----------------------------------------------------------------------
+--------------------------------------------------------------------
 
         GIVEN: A User is on a post
-        THEN: The userName of the person that created the post should be visible
-        AND: A timestamp of when the post was created should be visible
-        AND: The User Avatar should be visible
+        WHEN: The User clicks 'Delete Article'
+        THEN: The user should be redirected back to the 'Home' Page
 
 ---------------------------------------------------------------------
 
         GIVEN: A User is on a post
         THEN: A 'Comment section' should be visible 
         AND: A green 'Post Comment' button should be active and be visible
-
---------------------------------------------------------------------
-
-        GIVEN: A User is on a post
-        WHEN: The User clicks 'Delete Article'
-        THEN: The user should be redirected back to the 'Home' Page
 
 --------------------------------------------------------------------
 
