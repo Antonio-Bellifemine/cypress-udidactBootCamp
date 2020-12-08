@@ -2,12 +2,6 @@ Feature: Module 7 - 'New Post' Page
 Description: User Created a New Post
 
     Background: User has just filled required info and created a new post
-        GIVEN: The user has just created a new post
-        WHEN: the page loads
-        THEN: all contents of the post should be visible
-
----------------------------------------------------------------------
-
         GIVEN: A User is on a newly created post
         THEN: 2 'Edit Article' Buttons should be Active and Be visible
         AND: 2 'Delete Article' Buttons should be Active and Be visible
@@ -22,7 +16,7 @@ Description: User Created a New Post
 ---------------------------------------------------------------------
 
         GIVEN: A User is on a post
-        THEN: A 'Comment section' should be visible
+        THEN: A 'Comment section' should be visible 
         AND: A green 'Post Comment' button should be active and be visible
 
 --------------------------------------------------------------------
