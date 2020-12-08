@@ -4,7 +4,6 @@ before(() => {
 });
 
 describe("New Post Page'", () => {
-    //TODO fix this broken ass shit
     it("Check to see if new post page has expected elements", () => {
         cy.get('a').eq(0);
         cy.get('a.author').eq(1).should('contain', ' UdidactCamp2020 ');
