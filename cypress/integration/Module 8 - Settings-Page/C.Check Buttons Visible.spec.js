@@ -1,5 +1,3 @@
-const { contains } = require("cypress/types/jquery");
-
 before(() => {
     cy.login(Cypress.env('UserName'), Cypress.env('Password'), { timeout: 10000 });
 });
