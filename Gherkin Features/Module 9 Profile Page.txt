@@ -1,11 +1,16 @@
 Feature: Module 9 - Profile Page
 Description: This feature tests the 'User Profile' Page
 
-    Background: 
+    Background: User Clicks 'Profile Page' Button
         GIVEN: a user is on the 'User Profile' Page
         THEN: The 'User Avatar' Should be visible
         AND: 'UserName' Should be visible
         AND: an 'Edit Profile Settings' button Should be visible
+
+---------------------------------------------------------------------
+
+        WHEN: The 'Profile Page' loads
+        THEN: 'My Articles' should be visible
 
 ---------------------------------------------------------------------
 
