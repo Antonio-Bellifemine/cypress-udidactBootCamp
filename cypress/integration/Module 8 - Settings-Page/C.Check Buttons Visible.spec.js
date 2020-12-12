@@ -3,7 +3,7 @@ before(() => {
 });
 
 describe("New Post Page'", () => {
-    it("Confirm settings button redirect", () => {
+    it("Confirm expected Buttons are visible and enabled", () => {
         cy.clickSettings();
         cy.get('button[type="submit"]').should('contain', ' Update Settings ').and('be.enabled');
         cy.get('button[class="btn btn-outline-danger"]').should('contain', ' Or click here to logout. ').and('be.enabled');

@@ -23,7 +23,7 @@ Cypress.Commands.add('login', (userName, pswd) => {
 // Logout
 Cypress.Commands.add('logout', () => {
     let settingsUrl = "https://conduit-af252.firebaseapp.com/#/profile/UdidactCamp2020";
-    cy.get('a.nav-link[href="#/profile/UdidactCamp2020"]').click({force: true});
+    cy.get('a.nav-link[href="#/profile/UdidactCamp2020"]').eq(0).click({force: true});
     cy.waitUntil(() =>
         cy.url().should('eql', settingsUrl),
         {
@@ -111,7 +111,7 @@ Cypress.Commands.add('clickSettings', () => {
  
 Cypress.Commands.add('clickUserProfile', () => {
     let settingsUrl = "https://conduit-af252.firebaseapp.com/#/profile/UdidactCamp2020";
-    cy.get('a[href="#/profile/UdidactCamp2020"]').eq(3).click({ force: true });
+    cy.get('a[href="#/profile/UdidactCamp2020"]').click({ force: true });
     cy.waitUntil(() =>
         cy.url().should('eql', settingsUrl),
         {
