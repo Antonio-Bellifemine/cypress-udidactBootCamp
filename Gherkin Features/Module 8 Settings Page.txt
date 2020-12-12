@@ -1,7 +1,7 @@
 Feature: Module 8 - Settings Page
 Description: This Feature will test the user settings area
 
-    Background:
+    Background: User clicks 'Settings Button'
         GIVEN: Given a logged in user clicks on the 'Settings' button
         WHEN: The settings page loads
         THEN: A 'Your Settings' Headline should appear
@@ -12,8 +12,11 @@ Description: This Feature will test the user settings area
         THEN: There should be a 'Profile Picture URL' Input visible
         AND: 'Your Name' input should be visible
         AND: 'Email' input should be visible
-        AND: 'New Password' Input should be visible
-        AND: A Green 'Update Settings' Button should be visible and be active
+
+---------------------------------------------------------------------
+
+        WHEN: The settings page loads
+        THEN: A Green 'Update Settings' Button should be visible and be active
         AND: A 'Or click here to log out' Button should be visible and be active
 
 -----------------------------Challenge--------------------------------
