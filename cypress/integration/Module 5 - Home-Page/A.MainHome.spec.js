@@ -5,14 +5,13 @@ before(() => {
 describe('Main Home Page', () => {
 
     it('log in', () => {
-        let navItems = Cypress.$('a')
         cy.get('a').contains('Your Feed').should('be.visible');
         cy.get('conduit-navbar').within(() => {
             // turn these into commands
-            cy.get(navItems).eq(1).should('contain', 'Home')
-            cy.get(navItems).eq(2).should('contain', 'New Post')
-            cy.get(navItems).eq(3).should('contain', 'Settings')
-            cy.get(navItems).eq(4).should('contain', 'UdidactCamp2020')
+            cy.get('a.nav-link').contains('Home').should('be.visible');
+            cy.get('a.nav-link').contains('New Post').should('be.visible');
+            cy.get('a.nav-link').contains('Settings').should('be.visible');
+            cy.get('a.nav-link').contains('UdidactCamp2020').should('be.visible');
         });
     });
     

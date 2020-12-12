@@ -81,10 +81,10 @@ Cypress.Commands.add('clickHome', () => {
         });
 });
 
-//--------------------------------------------------------------------------------------------------------------------
 /* 
-create this after completing module 
+create these after completing module 5
 */
+
 Cypress.Commands.add('clickNewPost', () => {
     cy.get('a.nav-link').eq(1).should('contain', 'Home').click({ force: true });
     let settingsUrl = "https://conduit-af252.firebaseapp.com/#/editor";
@@ -97,11 +97,6 @@ Cypress.Commands.add('clickNewPost', () => {
         });
 });
 
-/* 
-create this after completing module 
-*/
-
-// 
 Cypress.Commands.add('clickSettings', () => {
     let settingsUrl = "https://conduit-af252.firebaseapp.com/#/settings";
     cy.get('a.nav-link').eq(2).should('contain', 'Settings').click({ force: true });
@@ -113,12 +108,7 @@ Cypress.Commands.add('clickSettings', () => {
             errorMsg: 'This is a custom error message' // overrides the default error message
         });
 });
-
-/* 
-create this after completing module 
-*/
-
-// 
+ 
 Cypress.Commands.add('clickUserProfile', () => {
     let settingsUrl = "https://conduit-af252.firebaseapp.com/#/profile/UdidactCamp2020";
     cy.get('a[href="#/profile/UdidactCamp2020"]').eq(3).click({ force: true });
