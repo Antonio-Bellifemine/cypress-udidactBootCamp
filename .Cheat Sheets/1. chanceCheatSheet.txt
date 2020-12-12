@@ -120,7 +120,7 @@ WEB
         chance.sentence({ words: 5 });
          Example: => 'Waddik jeasmov cakgilta ficub up.'
 ========================================
-WEB
+Email
 ========================================
 // Email usage
     chance.email()

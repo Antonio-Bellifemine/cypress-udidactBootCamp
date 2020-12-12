@@ -23,4 +23,4 @@ Description: This Feature will test the user settings area
         THEN: The user should be redirected to 'My Articles'
         AND: All of the users articles should be visible
 
----------------------------------------------------------------------
+----------------------------------------------------------------------
