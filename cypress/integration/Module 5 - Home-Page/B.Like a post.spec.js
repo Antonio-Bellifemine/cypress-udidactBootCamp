@@ -2,7 +2,7 @@ let likeBtn = 'button';
 let globalFeed = 'div.article-preview';
 
 before(() => {
-    cy.login('test9118@testing.com', 'UdidactCamp2020');
+    cy.login(Cypress.env('UserName'), Cypress.env('Password'));
 });
 
 describe("Clicking a like button while Logged in & on the Home Page", () => {

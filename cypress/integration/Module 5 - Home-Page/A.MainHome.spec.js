@@ -1,5 +1,5 @@
 before(() => {
-    cy.login(Cypress.env('UserName'), Cypress.env('Password'));
+    cy.login('test9118@testing.com', 'UdidactCamp2020');
 });
 
 describe('Main Home Page', () => {
@@ -19,7 +19,7 @@ describe('Main Home Page', () => {
 
 after(() => {
     let settingsUrl = "https://conduit-af252.firebaseapp.com/#/profile/UdidactCamp2020";
-    cy.get('a[href="#/profile/UdidactCamp2020"]').eq(0).click({ force: true });
+    cy.get('a.nav-link[href="#/profile/UdidactCamp2020"]').eq(0).click({ force: true });
     cy.waitUntil(() =>
         cy.url().should('eql', settingsUrl),
         {
