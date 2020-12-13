@@ -3,7 +3,7 @@ before(() => {
     cy.createNewPost()
 });
 
-describe("Delete New Post'", () => {
+describe("Deleting a new post'", () => {
 
     it("Create New Post and Click Delete", () => {
         cy.get('a').eq(0);

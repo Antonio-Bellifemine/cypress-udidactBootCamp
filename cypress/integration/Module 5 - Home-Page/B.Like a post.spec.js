@@ -5,7 +5,8 @@ before(() => {
     cy.login(Cypress.env('UserName'), Cypress.env('Password'));
 });
 
-describe("Clicking a like button while Logged in & on the Home Page", () => {
+describe("Liking a Post", () => {
+
     it('confirm like button increases by 1',() => {
         let likePost = 'div.info'
         // wait for the last global feed article to populate until we move forward
@@ -28,6 +29,7 @@ describe("Clicking a like button while Logged in & on the Home Page", () => {
         cy.wait('@articleFavoritedBtnClicked');
         cy.get(likePost).eq(1).should('have.text', "1");        
     });
+    
 });
 
 after(() => {

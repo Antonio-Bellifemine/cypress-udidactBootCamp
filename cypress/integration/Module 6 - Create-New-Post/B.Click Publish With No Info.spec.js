@@ -2,8 +2,9 @@ before(() => {
     cy.login(Cypress.env('UserName'), Cypress.env('Password'), {timeout: 10000});
 });
 
-describe("Click 'New Post'", () => {
-    it("confirm clicking 'New Post' redirects to correct page", () => {
+describe("Confirm clicking 'New Post' redirects to correct page", () => {
+
+    it("Click 'New Post", () => {
         cy.get('a[href="#/editor"]').click();
         cy.get('button').contains(' Publish Article ').click();
         cy.waitUntil(() => 
@@ -16,6 +17,7 @@ describe("Click 'New Post'", () => {
             cy.get('li').eq(2).should('have.text', " description can't be blank,is too short (minimum is 1 character) ")
         });
     });
+    
 });
 
 after(() => {

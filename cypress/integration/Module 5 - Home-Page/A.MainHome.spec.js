@@ -17,6 +17,7 @@ describe('Main Home Page', () => {
     
 });
 
+// we'll log out of every test to start in a clean application state
 after(() => {
     let settingsUrl = "https://conduit-af252.firebaseapp.com/#/profile/UdidactCamp2020";
     cy.get('a.nav-link[href="#/profile/UdidactCamp2020"]').eq(0).click({ force: true });

@@ -3,6 +3,7 @@ before(() => {
 });
 
 describe("User Profile Page'", () => {
+
     it("Confirm UserProfile Redirect", () => {
         cy.clickUserProfile();
         cy.waitUntil(() => 
@@ -17,6 +18,7 @@ describe("User Profile Page'", () => {
         cy.get('h4').should('contain', ' UdidactCamp2020 ');
         cy.get('a').contains(' Edit Profile Settings ');
     });
+    
 });
 
 after(() => {

@@ -63,11 +63,11 @@ Cypress.Commands.add('createNewPost', () => {
 });
 
 //--------------------------------------------------------------------------------------------------------------------
-/* 
-create this after completing module 
-*/
 
-// 
+
+/*
+create these after completing module 5
+*/
 Cypress.Commands.add('clickHome', () => {
     cy.get('a.nav-link').eq(0).should('contain', 'Home');
     let settingsUrl = "https://conduit-af252.firebaseapp.com/#/";
@@ -81,9 +81,6 @@ Cypress.Commands.add('clickHome', () => {
         });
 });
 
-/* 
-create these after completing module 5
-*/
 
 Cypress.Commands.add('clickNewPost', () => {
     cy.get('a.nav-link').eq(1).should('contain', 'Home').click({ force: true });

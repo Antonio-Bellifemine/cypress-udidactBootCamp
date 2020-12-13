@@ -10,8 +10,9 @@ before(() => {
     cy.login(Cypress.env('UserName'), Cypress.env('Password'), { timeout: 10000 });
 });
 
-describe("Click 'New Post'", () => {
-    it("confirm clicking 'New Post' redirects to correct page", () => {
+describe("Confirm new post creation", () => {
+
+    it("create a new post", () => {
         cy.get('a[href="#/editor"]').click();
         cy.waitUntil(() =>
             cy.get('div[class="container page"]'),
@@ -30,6 +31,7 @@ describe("Click 'New Post'", () => {
         
         cy.wait('@newPostHref');
     });
+
 });
 
 after(() => {

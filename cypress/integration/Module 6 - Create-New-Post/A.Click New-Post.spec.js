@@ -3,7 +3,9 @@ before(() => {
 });
 
 describe("Click 'New Post'", () => {
-    it("confirm clicking 'New Post' redirects to correct page", () => {
+
+    it("confirm clicking 'New Post' redirects to editor page", () => {
+
         cy.get('a[href="#/editor"]').click();
         cy.waitUntil(() =>
             cy.get('div[class="container page"]'),
@@ -17,6 +19,7 @@ describe("Click 'New Post'", () => {
         cy.get('textarea[placeholder="Write your article (in markdown)"]').should('be.visible')
         cy.get('input[placeholder="Enter Tags"]').should('be.visible')
     });
+
 });
 
 after(() => {

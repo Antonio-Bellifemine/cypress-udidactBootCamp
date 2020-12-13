@@ -3,6 +3,7 @@ before(() => {
 });
 
 describe("User Profile Page'", () => {
+
     it("Confirm My Articles is visible", () => {
         cy.clickUserProfile();
         cy.waitUntil(() => 
@@ -14,6 +15,7 @@ describe("User Profile Page'", () => {
         });
         cy.get('a').contains('My Articles').should('be.visible')
     });
+    
 });
 
 after(() => {
