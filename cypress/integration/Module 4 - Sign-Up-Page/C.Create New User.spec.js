@@ -1,3 +1,9 @@
+/*
+    explain Chance.JS will help by allowing us to dynamically test the new user registration.
+    -- dynamically allow us to test new user registration
+    -- we would otherwise need to hard code a different value every time we wanted to test this, making automation almost impossible.
+*/ 
+
 const userLastName = chance.last({ nationality: 'it' });
 const userEmail = chance.email({ domain: 'example.com' })
 const passWord = chance.string({ length: 10, casing: 'upper', alpha: true, numeric: true });

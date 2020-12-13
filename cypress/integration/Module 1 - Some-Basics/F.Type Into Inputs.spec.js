@@ -1,34 +1,29 @@
+// ---- explain triple slash directive for intellisense, syntax completion
 /// <reference types="Cypress" />
-const userLastName = chance.last({ nationality: 'it' });
-const userEmail = chance.email({ domain: 'example.com' })
-const passWord = chance.sentence({ words: 5 });
-
-// now we can add the before block so we can separate the set up code from the test cases 
-
-before('visit registration page', () => {
+// ---- now we can add the before block so we can separate the set up code from the test cases
+// before('visit registration page', () => {
     
+//     cy.visit('register');
+//     cy.viewport(1920, 1080);
+
+// })
+
+describe('Checking Registration Page Displays Properly', () => {
+    // Move these settings to a before Block
     cy.visit('register');
     cy.viewport(1920, 1080);
-
-})
-
-describe('Registration Page Displays Properly', () => {
-
-    it('click a link', () => {
+    it('click sign in link', () => {
         cy.visit('');
-        cy.get('a:contains("Sign in")').click()
-        cy.get('input:eq(0)').type('UDIDACT')
-        cy.get('input:eq(1)').type('Password')
+        cy.get('a:contains("Sign in")').click();
+        cy.get('input').eq(0).type('UDIDACT');
+        cy.get('input').eq(1).type('Password');
     });
 
-    it('display the username, email, password input fields', () => {
-        cy.get('a:contains("Sign in")').click();
-        cy.get('a:contains("Need an account?")').click();
-        cy.get('input').eq(0).should('be.visible').type("A" + userLastName);
-        // use string interpolation as an example of cleaner more readable code. (reads more like a sentance rather than 2 separate arguments)
-        // cy.get('input:eq(0)').should('be.visible').type(`A${userLastName}`);
-        cy.get('input').eq(1).should('be.visible').type(userEmail);
-        cy.get('input').eq(2).should('be.visible').type(passWord);
+    it('check username, email, password input fields', () => {
+        cy.visit('register');
+        cy.get('input').eq(0).should('be.visible').type("Test Tester");
+        cy.get('input').eq(1).should('be.visible').type('Tester@templateSettings.com');
+        cy.get('input').eq(2).should('be.visible').type('password12345', {delay: 300});
     });
 
 });

@@ -10,7 +10,7 @@ before('visit registration page', () => {
 
 })
 
-// using within to scope your test/elements to be more accurate, less flakey, and more controlled.
+// using cy.within to scope an element and it's decendants to be more accurate, less flakey, and more controlled.
 
 describe('public landing page displays properly', () => {
 
@@ -32,15 +32,19 @@ describe('public landing page displays properly', () => {
 
 });
 
-describe('using cleaner syntax',() => {
+/*
+    TODO ---> introduce a cleaner concept, but do not go too much into it
 
-    it('check the first post is visible and has a like button', () => {
-        cy.get('div.article-preview:eq(0) > div.article-meta').within(() => {
-            cy.get('img').should('be.visible')
-            cy.get('a.author').should('be.visible');
-            cy.get('div.info').eq(0).should('have.descendants', 'span.date');
-            cy.get('button').should('have.descendants', 'i.ion-heart');
-        });
-    });
-    
-})
+            from this --> cy.get('div.article-preview').eq(0).children().eq(0).within(() => {
+
+            to this   --> cy.get('div.article-preview:eq(0) > div.article-meta').within(() => {
+*/
+
+// it('check the first post is visible and has a like button', () => {
+//     cy.get('div.article-preview:eq(0) > div.article-meta').within(() => {
+//         cy.get('img').should('be.visible')
+//         cy.get('a.author').should('be.visible');
+//         cy.get('div.info').eq(0).should('have.descendants', 'span.date');
+//         cy.get('button').should('have.descendants', 'i.ion-heart');
+//     });
+// });
