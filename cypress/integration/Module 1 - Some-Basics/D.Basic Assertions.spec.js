@@ -1,6 +1,6 @@
 before('visit registration page', () => {
     cy.visit('');
-})
+});
 
 describe("Covering some basic assertions", () => {
 

@@ -3,7 +3,6 @@
 before('visit registration page', () => {
 
     cy.visit('');
-    cy.viewport(1920, 1080);
 
 })
 

@@ -1,7 +1,16 @@
+// some libraries need to be imported in the command file. Proper documentation will explain execution
+
 import 'cypress-wait-until';
 const { Chance } = require("chance");
 let chance = new Chance();
 //--------------------------------------------------------------------------------------------------------------------
+
+
+/* commands allow you to take your code and turn them into call functions you
+can use in your tests
+*/
+
+
 
 // Login
 Cypress.Commands.add('login', (userName, pswd) => {
@@ -37,9 +46,6 @@ Cypress.Commands.add('logout', () => {
 
 
 //--------------------------------------------------------------------------------------------------------------------
-/* 
-create this after completing module 6.C
-*/
 
 // Create New Post
 Cypress.Commands.add('createNewPost', () => {
@@ -65,9 +71,6 @@ Cypress.Commands.add('createNewPost', () => {
 //--------------------------------------------------------------------------------------------------------------------
 
 
-/*
-create these after completing module 5
-*/
 Cypress.Commands.add('clickHome', () => {
     cy.get('a.nav-link').eq(0).should('contain', 'Home');
     let settingsUrl = "https://conduit-af252.firebaseapp.com/#/";
