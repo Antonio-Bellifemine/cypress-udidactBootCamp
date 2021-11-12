@@ -19,7 +19,7 @@ describe('Creating a new user', () => {
         cy.get('a').contains("Need an account?").click();
         cy.get('input').eq(0).type(`A${userLastName}`);
         cy.get('input').eq(1).type(userEmail);
-        cy.get('input').eq(2).type(passWord);
+        cy.get('input').eq(2).type(passWord, {delay: 300});
 
         // Use this as a fix for cypress entering password if too fast to process 
         // cy.get('input').eq(2).should('be.visible').type(passWord, {delay: 75});

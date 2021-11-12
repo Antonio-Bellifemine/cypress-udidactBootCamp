@@ -19,8 +19,8 @@
   "author": "Antonio B.",
   "license": "ISC",
   "dependencies": {
-    "chance": "^1.1.7",
-    "cypress": "^5.6.0",
+    "chance": "^1.1.8",
+    "cypress": "^8.7.0",
     "cypress-wait-until": "^1.7.1"
   },
   "devDependencies": {

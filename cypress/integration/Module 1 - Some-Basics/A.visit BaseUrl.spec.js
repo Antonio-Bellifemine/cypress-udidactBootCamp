@@ -20,5 +20,5 @@ describe('test conduit webapp', () => {
         cy.visit('register');
 
     });
-    
+    cy.trigger()
 });
